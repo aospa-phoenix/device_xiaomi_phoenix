@@ -10,6 +10,9 @@ persist.sys.fuse.passthrough.enable=true
 # LMK
 ro.config.low_ram=false
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
