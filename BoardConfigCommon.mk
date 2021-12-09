@@ -25,8 +25,8 @@ include vendor/xiaomi/sm6150-common/BoardConfigVendor.mk
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a55
-TARGET_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_CPU_VARIANT := cortex-a76
+TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
 ifeq (,$(filter %_64,$(TARGET_PRODUCT)))
 TARGET_2ND_ARCH := arm
