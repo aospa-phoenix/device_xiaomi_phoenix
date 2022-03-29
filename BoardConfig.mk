@@ -81,7 +81,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/sdmsteppe-perf_defconfig
-KERNEL_FRAGMENT_CONFIG := vendor/phoenix.config
+KERNEL_FRAGMENT_CONFIG := vendor/debugfs.config vendor/phoenix.config
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
