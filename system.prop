@@ -13,6 +13,10 @@ ro.charger.enable_suspend=true
 # CNE
 persist.vendor.cne.feature=1
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
