@@ -26,6 +26,11 @@ PRODUCT_PRODUCT_VNDK_VERSION := current
 # Enforce java interfaces of product partition
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
+# Platform
+MSMSTEPPE := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := $(MSMSTEPPE)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
