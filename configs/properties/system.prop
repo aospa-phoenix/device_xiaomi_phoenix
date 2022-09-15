@@ -54,3 +54,6 @@ persist.vendor.delta_time.enable=true
 
 # WiFi
 wifi.interface=wlan0
+
+# Disable MTE async for system_server
+arm64.memtag.process.system_server=off
