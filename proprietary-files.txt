@@ -197,7 +197,7 @@ vendor/lib64/camera/components/etc/visidon_clearshot_params.xml|8041eed40eea41ad
 -vendor/lib64/camera/components/com.qti.node.remosaic.so|c06af6d5f6ea92862e3ec30b358b686993bcbf71
 -vendor/lib64/camera/components/com.qti.node.stich.so|4b5d93e154aae56500c31eb28796fc9294ddbab4
 -vendor/lib64/camera/components/com.qti.node.swregistration.so|8da60890534d24aab5831e41189deb4d7c22bee8
--vendor/lib64/camera/components/com.qti.node.watermark.so|20e471883d3ca8aa10a4b51c3d70c8eb56c0fb49
+-vendor/lib64/camera/components/com.qti.node.watermark.so|9e2739cb77ca0384b243331874577ebacf641b7f
 -vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so|c2beab647efd5b1b75f13d6aed317d685b8577cb
 -vendor/lib64/camera/components/com.qti.stats.aec.so|7689f09ed05344bd40ccb4277cae7265d6fb2c22
 -vendor/lib64/camera/components/com.qti.stats.af.so|304a4d026cc8a0e036598213239eceb38ffea894
