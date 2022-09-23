@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_phoenix.mk
+    $(LOCAL_DIR)/arrow_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_phoenix-user \
-    potato_phoenix-userdebug \
-    potato_phoenix-eng
+    arrow_phoenix-user \
+    arrow_phoenix-userdebug \
+    arrow_phoenix-eng
