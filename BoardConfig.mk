@@ -113,7 +113,10 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
+ifeq ($(PHOENIX_DEBUG),true)
+$(warning "PHOENIX_DEBUG is enabled. Permissive SELinux and other debug options have been enabled.")
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
