@@ -731,14 +731,14 @@ vendor/etc/seccomp_policy/imsrtp.policy
 # IRQ balance
 -vendor/bin/msm_irqbalance
 
-# Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
--vendor/lib64/libkeymasterdeviceutils.so
--vendor/lib64/libkeymasterprovision.so
--vendor/lib64/libkeymasterutils.so
--vendor/lib64/libqcbor.so
--vendor/lib64/libqtikeymaster4.so
+# Keymaster - from V13.0.3.0.SGHCNXM
+-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|786244acf8752dfe4282987f4dd6b29a4c9a6527
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+-vendor/lib64/libkeymasterdeviceutils.so|6fd0b0e1b30c4e6c5272794896306596880c657b
+-vendor/lib64/libkeymasterprovision.so|425996418aeceff1adf84fe16722eab3ca487ac1
+-vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
+-vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
+-vendor/lib64/libqtikeymaster4.so|327715d70e914e5c4eae2fbee039e24bb81d9157
 
 # Listen
 -vendor/lib/libadpcmdec.so
