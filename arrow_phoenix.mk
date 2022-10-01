@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 PHOENIX_DEBUG := false
 
 # Inherit from phoenix device
-$(call inherit-product, device/xiaomi/phoenix/sm6150.mk)
+$(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 # Inherit some common ROM stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
