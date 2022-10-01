@@ -79,7 +79,7 @@ TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/filesystem/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
