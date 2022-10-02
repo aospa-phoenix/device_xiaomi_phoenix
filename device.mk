@@ -294,6 +294,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     usb \
     vibrator \
+    wfd \
     wlan
 
 # RIL
@@ -358,3 +359,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwpa_client \
     PhoenixWifiOverlay
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
