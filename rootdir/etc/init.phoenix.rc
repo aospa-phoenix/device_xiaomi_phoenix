@@ -28,7 +28,7 @@
 on property:ro.boot.product.hardware.sku=phoenix
     enable vendor.nfc_hal_service
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     override
     class hal
     user nfc
