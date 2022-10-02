@@ -160,9 +160,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_USES_METADATA_PARTITION := true
 
-# Platform
-TARGET_BOARD_PLATFORM := sm6150
-
 # Power
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/configs/power/power-mode.cpp
 
