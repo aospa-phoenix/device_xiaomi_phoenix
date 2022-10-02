@@ -145,26 +145,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti
-
-PRODUCT_PACKAGES += \
-    gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy \
-    gnss@2.0-xtwifi-client.policy \
-    gnss@2.0-xtwifi-inet-agent.policy
-
-PRODUCT_PACKAGES += \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libsensorndkbridge
-
-PRODUCT_PACKAGES += \
-    gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -173,9 +153,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -311,6 +288,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     display \
+    gps \
     perf \
     telephony \
     usb \
