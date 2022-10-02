@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := xiaomi
-
 DEVICE_PATH := device/xiaomi/phoenix
 
 # Inherit from proprietary files

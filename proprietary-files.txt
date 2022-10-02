@@ -595,9 +595,6 @@ vendor/etc/seccomp_policy/imsrtp.policy
 -vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 -vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_vendor
 
-# IRQ balance
--vendor/bin/msm_irqbalance
-
 # Keymaster - from V13.0.3.0.SGHCNXM
 -vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|786244acf8752dfe4282987f4dd6b29a4c9a6527
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f

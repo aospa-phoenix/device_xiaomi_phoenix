@@ -109,6 +109,9 @@ case "$soc_id" in
     echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
     echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
 
+    echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
+    echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+
     # Configure default schedTune value for foreground/top-app
     echo 1 > /dev/stune/foreground/schedtune.prefer_idle
     echo 10 > /dev/stune/top-app/schedtune.boost
@@ -210,6 +213,9 @@ case "$soc_id" in
     echo 500 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us
     echo 20000 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us
 
+    echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
+    echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+
     # Configure default schedTune value for foreground/top-app
     echo 1 > /dev/stune/foreground/schedtune.prefer_idle
     echo 10 > /dev/stune/top-app/schedtune.boost
@@ -308,8 +314,5 @@ case "$soc_id" in
     echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
     ;;
 esac
-
-# Enable PowerHAL hint processing
-setprop vendor.powerhal.init 1
 
 setprop vendor.post_boot.parsed 1
