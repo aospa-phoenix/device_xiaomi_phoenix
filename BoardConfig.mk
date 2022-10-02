@@ -78,9 +78,6 @@ TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/filesystem/config.fs
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
