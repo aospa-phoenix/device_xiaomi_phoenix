@@ -7,10 +7,6 @@
             <name>IGoodixFingerprintDaemon</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IGoodixFingerprintDaemonExt</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.goodix.hardware.cap.biometrics.fingerprint</name>
