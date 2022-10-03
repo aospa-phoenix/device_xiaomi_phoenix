@@ -78,11 +78,13 @@ vendor/firmware/tfa98xx.cnt|90ff4ddd45cd4eb82dc53ecff0e7309db9b062a7
 
 # Audio HAL - from MIUI V13.0.3.0.SGHCNXM
 -vendor/lib/hw/audio.primary.sm6150.so|0754dfaaa767a9cb02e3ef8c35bddbf87dc3e395
+-vendor/lib/hw/sound_trigger.primary.sm6150.so|666423aa7f4a8667e8c7aad3c9e45b3bac0d0346
 -vendor/lib/libadm.so|7a1cfba258a1ca590011c2529f620b2db822acc7
 -vendor/lib/libaudio_log_utils.so|007f0e1136d3ca422c9b6c59f7fbcc4588394d87
 -vendor/lib/libaudioparsers.so|68826db8a2cdff81d835ec68573e6df75a7b3304
 -vendor/lib/libaudioroute_ext.so|e4083b361cd3047544f412ae972242d8c6f04597
 -vendor/lib/libqtigef.so|ef2f0eefe3b8b5e4d4bc559656de8c58cc461c01
+-vendor/lib/vndk/libxlog.so|bdb3d8d8b37bd4e1e84f59d912457690e7388f2e
 
 # Audio extensions - from MIUI V13.0.3.0.SGHCNXM
 -vendor/lib/btaudio_offload_if.so|a29488cfbf08a02b0d8d493a4fbe01ce2e5da3bc
