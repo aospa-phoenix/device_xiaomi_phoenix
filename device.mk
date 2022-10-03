@@ -20,12 +20,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
-# Enforce native interfaces of product partition as VNDK
-PRODUCT_PRODUCT_VNDK_VERSION := current
-
-# Enforce java interfaces of product partition
-PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
-
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
@@ -40,10 +34,6 @@ PRODUCT_COPY_FILES += \
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := 29
-
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -157,11 +147,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport.vendor \
-    libhwbinder.vendor
 
 # Init scripts
 PRODUCT_COPY_FILES += \
@@ -337,10 +322,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml
-
-# VNDK
-PRODUCT_PACKAGES += \
-    com.android.vndk.current.on_vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
