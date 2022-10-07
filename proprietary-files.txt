@@ -654,6 +654,7 @@ vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc|583c82c48d329ec74a83777e0
 vendor/etc/libnfc-nxp_RF.conf|4af2cd48d1e4e65e2342e81621fe7a87107cc7d4
 vendor/lib/libsn100u_fw.so|c6ae3eb6085c5077041a1301db8f34b0b6dcce4e
 vendor/lib/nfc_nci.nqx.default.hw.so|350a5f4357ae733248f54374003644ce91e74714
+vendor/lib64/nfc_nci.nqx.default.hw.so|72fb834f550617f3d3c5e1b0407a27032b354f56
 vendor/lib64/jcos_nq_client.so|7643b8b4f52e7e61b35fa2ffe76ce1fbc920ff2b
 vendor/lib64/ls_nq_client.so|8185f51fe0a07da6ab862f7d152a5c747e5ad057
 vendor/lib64/se_nq_extn_client.so|6c42ccdc037f7c52600bd850f7566dcd7a0f68e9
