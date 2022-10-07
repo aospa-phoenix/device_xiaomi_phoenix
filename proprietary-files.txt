@@ -648,7 +648,17 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # NFC - from MIUI V13.0.3.0.SGHCNXM
+-vendor/bin/nqnfcinfo|8ab991cd43ece3ecc964601a13e2a31767c3a521
+-vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service|8e2bf6288aa85dee147cc1479c1973bd84b137f2
+vendor/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc|583c82c48d329ec74a83777e0c2c62d0a86e692e
+vendor/etc/libnfc-nxp_RF.conf|4af2cd48d1e4e65e2342e81621fe7a87107cc7d4
 vendor/lib/libsn100u_fw.so|c6ae3eb6085c5077041a1301db8f34b0b6dcce4e
+vendor/lib/nfc_nci.nqx.default.hw.so|350a5f4357ae733248f54374003644ce91e74714
+vendor/lib64/jcos_nq_client.so|7643b8b4f52e7e61b35fa2ffe76ce1fbc920ff2b
+vendor/lib64/ls_nq_client.so|8185f51fe0a07da6ab862f7d152a5c747e5ad057
+vendor/lib64/se_nq_extn_client.so|6c42ccdc037f7c52600bd850f7566dcd7a0f68e9
+vendor/lib64/vendor.nxp.hardware.nfc@1.0.so|2eacba426256a06dd3f6bd388515e40c0cb227ab
+vendor/lib64/vendor.nxp.hardware.nfc@1.1.so|40f0ae39329d13daedccee484fc1aa0e773793cd
 
 # Peripheral Manager
 -vendor/bin/pm-proxy

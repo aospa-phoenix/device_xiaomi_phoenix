@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
     override
     class hal
     user nfc
@@ -33,4 +33,4 @@ service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     disabled
 
 on boot && property:ro.boot.product.hardware.sku=phoenix
-    enable nqnfc_2_0_hal_service
+    enable nqnfc_1_2_hal_service
