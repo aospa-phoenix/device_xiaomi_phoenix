@@ -68,10 +68,10 @@
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/config_sfps_sensor_props_phoenix</item>
     </array>
 
-    <array name="config_sfps_sensor_props_0" translatable="false">
+    <array name="config_sfps_sensor_props_phoenix" translatable="false">
         <item>local:4630946711218184577</item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
         <item>990</item> <!--item>sensorLocationY</item-->
