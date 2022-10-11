@@ -37,6 +37,7 @@ BOARD_SHIPPING_API_LEVEL := 29
 
 # Debug options
 PHOENIX_DEBUG := false
+include $(LOCAL_PATH)/configs/properties/vendor_logging.mk
 
 # ANT+
 PRODUCT_PACKAGES += \
