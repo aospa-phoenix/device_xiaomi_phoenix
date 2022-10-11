@@ -19,10 +19,10 @@
     <dimen name="status_bar_padding_top">8dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">12dp</dimen>
+    <dimen name="status_bar_padding_start">3.0px</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">3dp</dimen>
+    <dimen name="status_bar_padding_end">3.0px</dimen>
     
     <!-- Margin start of the system icons super container -->
     <dimen name="system_icons_super_container_avatarless_margin_end">33px</dimen>
