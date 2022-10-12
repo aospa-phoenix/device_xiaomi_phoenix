@@ -457,6 +457,8 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # Display calibration - from MIUI V13.0.3.0.SGHCNXM
+-vendor/bin/qdcmss|a1bb68e4508feac29c821eb791cae8b1db235e28
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/etc/hdr_config.cfg|14bd7906643998c6b6bb51be5f20007232eaccc3
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml|678c6844632d3a0547efa9013867c427e4e17482
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0b_video_mode_dsc_dsi_panel.xml|678c6844632d3a0547efa9013867c427e4e17482
