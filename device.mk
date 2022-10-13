@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
 
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
-BOARD_SHIPPING_API_LEVEL := 29
 
 # Debug options
 PHOENIX_DEBUG := false
