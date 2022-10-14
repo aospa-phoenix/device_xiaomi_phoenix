@@ -8,4 +8,5 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.DeviceStatisticsService=$(VENDOR_LOG_LEVEL_I) \
-    persist.log.tag.QC-time-services=$(VENDOR_LOG_LEVEL_I)
+    persist.log.tag.QC-time-services=$(VENDOR_LOG_LEVEL_I) \
+    persist.log.tag.DrmLibTime=$(VENDOR_LOG_LEVEL_D)
