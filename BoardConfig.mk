@@ -29,16 +29,12 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
-TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
-ifeq (,$(filter %_64,$(TARGET_PRODUCT)))
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
-endif
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -51,8 +47,6 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := false
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
 TARGET_PROVIDES_AUDIO_EXTNS := true
-
-USE_CUSTOM_AUDIO_POLICY := 1
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
@@ -72,7 +66,6 @@ LOC_HIDL_VERSION := 4.0
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
