@@ -97,9 +97,6 @@ BOARD_KERNEL_CMDLINE += swiotlb=1
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1 cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += kpti=off
 
-# TARGET_KERNEL_APPEND_DTB handling
-TARGET_KERNEL_APPEND_DTB := false
-
 # Set header version for bootimage
 # Enable DTB in bootimage and set header version
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
