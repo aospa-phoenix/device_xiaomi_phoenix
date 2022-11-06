@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2020 The LineageOS Project
+// Copyright (C) 2022 Paranoid Android
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,6 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+
 cc_library_static {
     name: "libinit_phoenix",
     srcs: ["init_phoenix.cpp"],
@@ -22,4 +23,37 @@ cc_library_static {
         "system/core/init",
     ],
     shared_libs: ["libbase"],
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.phoenix.rc",
+    src: "init.phoenix.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.phoenix.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.phoenix.rc",
+    device_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    vendor: true,
 }

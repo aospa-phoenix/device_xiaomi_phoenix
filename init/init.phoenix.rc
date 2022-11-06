@@ -1,4 +1,6 @@
-# Copyright (c) 2016, 2018, The Linux Foundation. All rights reserved.
+# Copyright (C) 2009-2012, 2014-2020, The Linux Foundation. All rights reserved.
+# Copyright (C) 2019-2022 XiaoMi Inc.
+# Copyright (C) 2022 Paranoid Android
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -23,8 +25,52 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
 
+on boot
+    # Create camera directory
+    mkdir /mnt/vendor/persist/camera 0755 system cameraserver
+
+on post-fs-data
+    # Create the directories used by the Wireless subsystem
+    mkdir /data/vendor/mac_addr 0770 system wifi
+
+    # Make MTU adjusting
+    write /proc/sys/net/ipv4/tcp_mtu_probing 1
+
+on property:vendor.post_boot.parsed=1
+    # configure input boost settings
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
+    write /sys/module/cpu_boost/parameters/input_boost_ms "120"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq "0:1804800 1:0 2:0 3:0 4:0 5:0 6:2208000 7:0"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 400
+
+    # configure cpuset parameters.
+    write /dev/cpuset/background/cpus "0-2"
+    write /dev/cpuset/system-background/cpus "0-3"
+    write /dev/cpuset/foreground/boost/cpus "4-7"
+    write /dev/cpuset/foreground/cpus "0-2,4-7"
+    write /dev/cpuset/top-app/cpus "0-7"
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    socket audio_hw_socket seqpacket 0666 system system
+    onrestart restart audioserver
+
+# Xiaomi WiFi
+service nv_mac /vendor/bin/nv_mac
+    class late_start
+    user system
+    group system inet net_admin wifi net_raw
+    oneshot
+
+# NFC
 service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
     override
     class hal
