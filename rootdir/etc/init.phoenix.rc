@@ -34,3 +34,17 @@ service nqnfc_1_2_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.2-service
 
 on boot && property:ro.boot.product.hardware.sku=phoenix
     enable nqnfc_1_2_hal_service
+
+on property:vendor.post_boot.parsed=1
+    # configure input boost settings
+    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
+    write /sys/module/cpu_boost/parameters/input_boost_ms "120"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq "0:1804800 1:0 2:0 3:0 4:0 5:0 6:2208000 7:0"
+    write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 400
+
+    # configure cpuset parameters.
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/foreground/boost/cpus 4-7
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/top-app/cpus 0-7
