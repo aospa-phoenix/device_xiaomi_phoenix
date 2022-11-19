@@ -27,9 +27,6 @@ ro.media.recorder-max-base-layer-fps=60
 ro.sensor.pickup=xiaomi.sensor.pickup
 ro.sensor.proximity=true
 
-# RCS
-persist.rcs.supported=1
-
 # Radio
 persist.radio.NO_STAPA=1
 persist.radio.VT_CAM_INTERFACE=1
