@@ -44,9 +44,6 @@ on init
     write /sys/block/sde/queue/iosched/slice_idle 0
     write /sys/block/sde/queue/nr_requests 256
 
-on boot
-    write /dev/cpuset/audio-app/cpus 1-2
-
 on property:vendor.post_boot.parsed=1
     # configure input boost settings
     write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
