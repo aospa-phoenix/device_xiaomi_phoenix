@@ -57,6 +57,12 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/foreground/cpus 0-2,4-7
     write /dev/cpuset/top-app/cpus 0-7
 
+    # IRQ Tuning
+    # IRQ 128: msm_drm
+    # IRQ 383: kgsl_3d0
+    write /proc/irq/128/smp_affinity_list 2
+    write /proc/irq/383/smp_affinity_list 1
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100
