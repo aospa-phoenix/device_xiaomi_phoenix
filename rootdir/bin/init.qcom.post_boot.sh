@@ -115,9 +115,6 @@ case "$soc_id" in
     echo 768000 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
     echo 1 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/pl
 
-    echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
-    echo 100 > /sys/module/cpu_boost/parameters/input_boost_ms
-
     # Configure default schedTune value for foreground/top-app
     echo 1 > /dev/stune/foreground/schedtune.prefer_idle
     echo 10 > /dev/stune/top-app/schedtune.boost
@@ -217,9 +214,6 @@ case "$soc_id" in
     echo 1324600 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_freq
     echo 652800 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
     echo 1 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/pl
-
-    echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
-    echo 100 > /sys/module/cpu_boost/parameters/input_boost_ms
 
     # Configure default schedTune value for foreground/top-app
     echo 1 > /dev/stune/foreground/schedtune.prefer_idle
