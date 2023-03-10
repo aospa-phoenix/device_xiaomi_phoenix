@@ -262,6 +262,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     av \
     bt \
+    charging \
     display \
     gps \
     media-legacy \
