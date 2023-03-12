@@ -266,7 +266,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     charging \
     display \
     gps \
-    media-legacy \
+    media \
     perf \
     telephony \
     usb \
