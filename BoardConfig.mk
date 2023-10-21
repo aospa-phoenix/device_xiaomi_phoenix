@@ -80,7 +80,8 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_phoenix
 TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Kernel
-TARGET_KERNEL_CONFIG := phoenix_defconfig
+TARGET_KERNEL_CONFIG := vendor/sdmsteppe-perf_defconfig
+KERNEL_FRAGMENT_CONFIG := vendor/phoenix.config
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
