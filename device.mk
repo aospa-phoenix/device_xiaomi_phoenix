@@ -113,7 +113,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.0.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
